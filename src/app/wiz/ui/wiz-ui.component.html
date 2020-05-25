@@ -1,0 +1,11 @@
+<div *ngIf="currentWiz">    
+    <div *ngIf="currentWiz.name == 'A'">
+        <div>Threshold: {{currentWiz.spec.threshold}}</div>
+        <div *ngIf="currentWiz['remainingSeconds']">
+            Remaining Seconds: {{currentWiz['remainingSeconds']}}
+        </div>
+    </div>
+</div>
+<div *ngIf="!currentWiz">
+    Wizard has not been started.
+</div>

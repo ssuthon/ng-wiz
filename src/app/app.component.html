@@ -1,0 +1,6 @@
+<input type="number" [(ngModel)] = "value">
+<button (click)="updateValue()">Update</button>
+<hr/>
+{{wizService.currentStep}}
+<hr/>
+<app-wiz-ui [currentWiz]="wizService.currentWiz"></app-wiz-ui>
